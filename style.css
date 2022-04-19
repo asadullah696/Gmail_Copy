@@ -1,0 +1,869 @@
+body{
+    display: flex;
+    position: absolute;
+    top: calc(0vh);
+    left: calc(0vw);
+    width: calc(100vw);
+    height: calc(100vh);
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.nav{
+    display: flex;
+    position: fixed;
+    top: calc(0vh);
+    left: calc(0vw);
+    height: calc(9.9vh);
+    width: calc(100vw);
+    background-color: white;
+    border-bottom: 1px solid rgb(153, 151, 151);
+}
+div.mainlogo{
+    display: flex;
+    position: absolute;
+    top: calc(1vh);
+    left: calc(1vw);
+    height: calc(8vh);
+    width: calc(16vw);
+    /* background-color: lightcyan; */
+}
+div.menutab{
+    display: flex;
+    position: absolute;
+    top: calc(2vh);
+    left: calc(0vw);
+    height: calc(4vh);
+    width: calc(2vw);
+    /* background-color: cadetblue; */
+}
+div.gmaillogo{
+    display: flex;
+    position: absolute;
+    top: calc(1vh);
+    left: calc(3vw);
+    height: calc(6VH);
+    width: calc(3vw);
+    /* background-color: yellow; */
+}
+img.gmaillogo{
+    height: inherit;
+    width: inherit;
+}
+div.gmailname{
+    display: flex;
+    position: absolute;
+    top: calc(2vh);
+    left: calc(6vw);
+    width: calc(7vw);
+    height: calc(4vh);
+    font-size: x-large;
+    justify-content: center;
+    text-align: center;
+    color: rgb(124, 124, 124);
+    /* background-color: antiquewhite; */
+}
+div.navsearchbar{
+    display: flex;
+    position: absolute;
+    top: calc(1vh);
+    left: calc(18vw);
+    height: calc(8vh);
+    width: calc(53.5vw);
+    background-color: lightgray;
+    border-radius: 10px;
+}
+div.searchicon{
+    display: flex;
+    position: absolute;
+    top: calc(2vh);
+    left: calc(1vw);
+    height: calc(4vh);
+    width: calc(2vw);
+    /* background-color: lightgoldenrodyellow; */
+}
+div.searchicon:hover{
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+div.input{
+    display: flex;
+    position: absolute;
+    top: calc(1vh);
+    left: calc(4vw);
+    width: calc(45vw);
+    height: calc(6vh);
+    /* font-size: x-large; */
+    /* background-color: greenyellow; */
+}
+input.navsearch{
+    height: inherit;
+    width: inherit;
+    background-color: transparent;
+    border: none;
+}
+div.filter{
+    display: flex;
+    position: absolute;
+    right: calc(1vw);
+    top: calc(2vh);
+    height: calc(4vh);
+    width: calc(2vw);
+    font-size: x-large;
+    /* background-color: aqua; */
+}
+div.filter:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+div.rightmenu{
+    display: flex;
+    position: absolute;
+    right: calc(1vw);
+    top: calc(1vh);
+    height: calc(8vh);
+    width: calc(15.5vw);
+    /* background-color: lightseagreen; */
+}
+div.question{
+    display: flex;
+    position: absolute;
+    top: calc(2vh);
+    left: calc(0vw);
+    height: calc(4vh);
+    width: calc(2vw);
+    /* background-color: azure; */
+}
+div.question:hover{
+    background-color: gray;
+    border-radius: 100px;
+}
+div.setting{
+    display: flex;
+    position: absolute;
+    top: calc(2vh);
+    left: calc(4vw);
+    height: calc(4vh);
+    width: calc(2vw);
+    /* background-color: azure; */
+}
+div.setting:hover{
+    background-color: gray;
+    border-radius: 100px;
+}
+div.grid{
+    display: flex;
+    position: absolute;
+    top: calc(2vh);
+    left: calc(8vw);
+    height: calc(4vh);
+    width: calc(2vw);
+    /* background-color: azure; */
+}
+div.grid:hover{
+    background-color: gray;
+    /* border-radius: 100px; */
+}
+div.avatar{
+    display: flex;
+    position: absolute;
+    top: calc(1vh);
+    right: calc(1vw);
+    height: calc(6vh);
+    width: calc(3vw);
+    /* background-color: bisque; */
+}
+img.avatar{
+    height: inherit;
+    width: inherit;
+    border-radius: 100px;
+}
+div.mails{
+    display: flex;
+    position: fixed;
+    top: calc(10vh);
+    left: calc(0vw);
+    height: calc(90vh);
+    width: calc(18vw);
+    background-color: white;
+    /* overflow: scroll; */
+}
+div.composemain{
+    display: flex;
+    position: absolute;
+    top: calc(2vh);
+    left: calc(0vw);
+    height: calc(13vh);
+    width: calc(12vw);
+    /* background-color: lightcyan; */
+}
+div.compose{
+    display: flex;
+    position: absolute;
+    left: calc(0vw);
+    top: calc(1vh);
+    height: calc(8vh);
+    width: calc(11vw);
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+div.composelogo{
+    display: flex;
+    position: absolute;
+    top: calc(1vh);
+    left: calc(0.5vw);
+    width: calc(2.2vw);
+    height: calc(5vh);
+    /* background-color: pink; */
+
+}
+div.composetype{
+    display: flex;
+    position: absolute;
+    top: calc(2vh);
+    left: calc(4vw);
+    height: calc(4vh);
+    width: calc(7vw);
+    font-size: large;
+    color: rgb(121, 121, 121);
+    /* background-color: antiquewhite; */
+}
+/* div.compose:hover{
+    background-color: gray;
+    color: white;
+} */
+div.inbox{
+    display: flex;
+    position: absolute;
+    top: calc(15vh);
+    left: calc(0vh);
+    height: calc(35vh);
+    width: inherit;
+    /* background-color: lightsalmon; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+div.inbox1{
+    display: flex;
+    position: absolute;
+    top: calc(0vh);
+    left: calc(0vw);
+    height: calc(5vh);
+    width: calc(16.5vw);
+    background-color: red;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+div.inbox2{
+    display: flex;
+    position: absolute;
+    top: calc(5vh);
+    left: calc(0vw);
+    height: calc(5vh);
+    width: calc(16.5vw);
+    /* background-color: rgb(89, 160, 226); */
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+div.inbox3{
+    display: flex;
+    position: absolute;
+    top: calc(10vh);
+    left: calc(0vw);
+    height: calc(5vh);
+    width: calc(16.5vw);
+    /* background-color: rgb(94, 255, 0); */
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+div.inbox4{
+    display: flex;
+    position: absolute;
+    top: calc(15vh);
+    left: calc(0vw);
+    height: calc(5vh);
+    width: calc(16.5vw);
+    /* background-color: rgb(247, 162, 162); */
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+div.inbox5{
+    display: flex;
+    position: absolute;
+    top: calc(20vh);
+    left: calc(0vw);
+    height: calc(5vh);
+    width: calc(16.5vw);
+    /* background-color: rgb(88, 70, 70); */
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+div.inbox6{
+    display: flex;
+    position: absolute;
+    top: calc(25vh);
+    left: calc(0vw);
+    height: calc(5vh);
+    width: calc(16.5vw);
+    /* background-color: rgb(218, 99, 99); */
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+div.inbox7{
+    display: flex;
+    position: absolute;
+    top: calc(30vh);
+    left: calc(0vw);
+    height: calc(5vh);
+    width: calc(16.5vw);
+    /* background-color: rgb(218, 99, 99); */
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+div.inboxspecific7{
+    display: flex;
+    position: absolute;
+    top: calc(1.5vh);
+    bottom: calc(0vh);
+    left: calc(5vw);
+    height: calc(4.5vh);
+    width: calc(6vw);
+    /* background-color: lightcyan; */
+    justify-content: center;
+}
+div.inboxlogo7{
+    display: flex;
+    position: absolute;
+    top: calc(1vh);
+    left: calc(4vw);
+    height: calc(4vh);
+    width: calc(2.5vw);
+    /* background-color: pink; */
+}
+div.inboxlogo{
+    display: flex;
+    position: absolute;
+    top: calc(1vh);
+    left: calc(1vw);
+    height: calc(4vh);
+    width: calc(2.5vw);
+    /* background-color: pink; */
+}
+div.inboxspecific{
+    display: flex;
+    position: absolute;
+    top: calc(1.5vh);
+    bottom: calc(0vh);
+    left: calc(5vw);
+    height: calc(4.5vh);
+    width: calc(6vw);
+    /* background-color: lightcyan; */
+    justify-content: center;
+}
+div.inhvr:hover{
+    background-color: gray;
+    color: whitesmoke;
+    transition: -1s;
+    border-left: 5px solid blue;
+}
+div.meet{
+    display: flex;
+    position: absolute;
+    top: calc(50vh);
+    left: calc(0vw);
+    width: calc(20vw);
+    height: calc(20vh);
+    /* background-color: aqua; */
+}
+div.meetheading{
+    display: flex;
+    position: absolute;
+    top: calc(1vh);
+    left: calc(1vw);
+    height: calc(3vh);
+    width: calc(10vw);
+    color: rgb(117, 117, 117);
+    /* font-weight: bold; */
+    /* background-color: lightgoldenrodyellow; */
+}
+div.meeting{
+    display: flex;
+    position: absolute;
+    top: calc(5vh);
+    left: calc(0vw);
+    height: calc(15vh);
+    width: calc(18vw);
+    /* background-color: lightgreen; */
+}
+div.meeting1{
+    display: flex;
+    position: absolute;
+    top: calc(0vh);
+    left: calc(0vw);
+    height: calc(7.5vh);
+    width: inherit;
+    /* background-color: lightyellow; */
+}
+div.meeting2{
+    display: flex;
+    position: absolute;
+    top: calc(7.5vh);
+    left: calc(0vw);
+    height: calc(7.5vh);
+    width: inherit;
+    /* background-color: rgb(247, 247, 174); */
+}
+div.meetinglogo{
+    display: flex;
+    position: absolute;
+    top: calc(2vh);
+    left: calc(1.5vw);
+    height: calc(4vh);
+    width: calc(3vw);
+    /* background-color: lightcoral; */
+}
+div.meetingname{
+    display: flex;
+    position: absolute;
+    top: calc(2.5vh);
+    left: calc(5vw);
+    height: calc(3.5vh);
+    width: calc(10vw);
+    color: rgb(90, 90, 90);
+    /* background-color: white; */
+}
+div.nav2{
+    display: flex;
+    position: fixed;
+    left: calc(18vw);
+    top: calc(10vh);
+    width: calc(77vw);
+    height: calc(7.9vh);
+    background-color: lightgray;
+    border-bottom: 1px solid black;
+}
+img.arrowdownimg{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+img.arrowdownimgtwo{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 4%;
+}
+img.refreshimg{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+img.showimg{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+}
+img.leftarrowimg{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 83%;
+}
+img.rightarrowimgtwo{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 88%;
+}
+img.keyboardimg{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 93%;
+}
+img.rightarrowimgthree{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 95%;
+}
+p.pgcount{
+    height: calc(6vh);
+    width: calc(6vw);
+    font-family: sans-serif;
+    font-size: 1em;
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 74%;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+div.gmails{
+    display: flex;
+    position: fixed;
+    top: calc(18vh);
+    left: calc(18vw);
+    height: calc(82vh);
+    width: calc(77vw);
+    overflow: scroll;
+    background-color: whitesmoke;
+}
+div.aa{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(0vh);
+    left: calc(0vw);
+}
+p.mailfrom{
+    display: flex;
+    position: absolute;
+    left: calc(1vw);
+    top: calc(0vh);
+    font: 1em sans-serif;
+}
+p.mail{
+    display: flex;
+    font: 1em sans-serif;
+    position: absolute;
+    top: calc(0vh);
+    left: calc(15vw);
+}
+p.date{
+    display: flex;
+    position: absolute;
+    top: calc(0vh);
+    right: calc(2vw);
+}
+div.ab{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(5vh);
+    left: calc(0vh);
+}
+div.ac{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(10vh);
+    left: calc(0vw);
+}
+div.ad{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(15vh);
+    left: calc(0vw);
+}
+div.ae{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(20vh);
+    left: calc(0vw);
+}
+div.af{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(25vh);
+    left: calc(0vw);
+}
+div.ag{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(30vh);
+    left: calc(0vw);
+}
+div.ah{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(35vh);
+    left: calc(0vw);
+}
+div.ai{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(40vh);
+    left: calc(0vw);
+}
+div.aj{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);    
+    display: flex;
+    position: absolute;
+    top: calc(45vh);
+    left: calc(0vw);
+}
+div.ak{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(50vh);
+    left: calc(0vw);
+}
+div.al{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(55vh);
+    left: calc(0vw);
+}
+div.am{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(60vh);
+    left: calc(0vw);
+}
+div.an{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(65vh);
+    left: calc(0vw);
+}
+div.ao{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(70vh);
+    left: calc(0vw);
+}
+div.ap{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(75vh);
+    left: calc(0vw);
+}
+div.aq{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(80vh);
+    left: calc(0vw);
+}
+div.ar{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(85vh);
+    left: calc(0vw);
+}
+div.as{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(90vh);
+    left: calc(0vw);
+}
+div.at{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(95vh);
+    left: calc(0vw);
+}
+div.au{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(100vh);
+    left: calc(0vw);
+}
+div.av{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(105vh);
+    left: calc(0vw);
+}
+div.aw{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(110vh);
+    left: calc(0vw);
+}
+div.ax{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(115vh);
+    left: calc(0vw);
+}
+div.ay{
+    height: calc(5vh);
+    width: calc(76vw);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    position: absolute;
+    top: calc(120vh);
+    left: 0%;
+}
+
+div.googleother{
+    display: flex;
+    position: fixed;
+    right: calc(0vw);
+    top: calc(10vh);
+    height: calc(90vh);
+    width: calc(5vw);
+    background-color: whitesmoke;
+}
+img.calenderimg{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    position: absolute;
+    top: 3%;
+    left: 33%;
+}
+img.bulbimg{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    position: absolute;
+    top: 13%;
+    left: 33%;
+}
+img.taskimg{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    position: absolute;
+    top: 23%;
+    left: 33%;
+}
+img.contactimg{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    position: absolute;
+    top: 33%;
+    left: 33%;
+}
+img.plusimgtwo{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    position: absolute;
+    top: 53%;
+    left: 33%;
+}
+img.rightarrowimg{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    position: absolute;
+    top: 93%;
+    left: 40%;
+}
+
+
+@media all and (max-width:700px){
+    body{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div.nav{
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: block;
+    }
+    /* div.navsearchbar{
+        display: none;
+    }
+    div.question{
+        display: none;
+    }
+    div.setting{
+        display: none;
+    }
+    div.gmailname{
+        display: none;
+    }
+    div.gmaillogo{
+        display: none;
+    }
+    div.composemain{
+        position: fixed;
+        top: calc(20vh);
+        left: calc(20vw);
+        z-index: 10;
+    } */
+    
+}
